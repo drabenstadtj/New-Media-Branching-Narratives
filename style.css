@@ -34,12 +34,12 @@ hr {
   overflow-y: auto;
   padding-right: 15px;
   padding-top: 10px;
+  padding-bottom: 5%;
 }
 
 head,
 body {
   margin: 2%;
-  padding-bottom: 50px;
 }
 
 #ind {
@@ -112,4 +112,13 @@ figcaption {
 #quote {
   padding-left: 40px;
   padding-right: 20px;
+}
+@media (max-width: 767px) {
+  #nav a {
+    display: none; /* Hide all navigation links */
+  }
+
+  #nav a.btn {
+    display: block; /* Display only the Previous and Next buttons */
+  }
 }
